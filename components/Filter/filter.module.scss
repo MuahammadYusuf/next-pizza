@@ -1,0 +1,90 @@
+.topFilter {
+  display: flex;
+  align-items: center;
+  padding: 40px 0 32px;
+  justify-content: space-between;
+  @media (max-width: 768px) {
+    display: block;
+  }
+
+  .leftSide {
+    display: flex;
+    gap: 15px;
+    @media (max-width: 768px) {
+      overflow-y: hidden;
+      margin-bottom: 15px;
+      padding-bottom: 20px;
+    }
+  }
+
+  .rightSide {
+    position: relative;
+
+    .title {
+      font-family: Proxima Nova, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.015em;
+      color: #2C2C2C;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      margin-bottom: 10px;
+      @media (max-width: 425px) {
+        justify-content: end;
+      }
+      &.opened{
+        svg{
+          transform: rotate(360deg);
+        }
+      }
+      svg {
+        transition: all 0.2s linear;
+        margin-right: 5px;
+        transform: rotate(180deg);
+      }
+
+      span {
+        font-family: Proxima Nova, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.015em;
+        color: #FE5F1E;
+      margin-left:5px;
+      }
+    }
+
+    .filterBox {
+      background: #FFFFFF;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.09);
+      border-radius: 10px;
+      position: absolute;
+      max-width: 130px;
+      width: 100%;
+      padding: 10px 0;
+      right: 0;
+
+      .filterTitle {
+        padding: 10px 0 11px 14px;
+        font-family: Proxima Nova, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.015em;
+        color: #000000;
+        cursor: pointer;
+        transition: 0.2s;
+
+        &:hover {
+          background: rgba(254, 95, 30, 0.05);
+          color: #FE5F1E;
+        }
+      }
+    }
+  }
+}

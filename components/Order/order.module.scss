@@ -1,0 +1,122 @@
+.order {
+  display: flex;
+  border-top: 1px solid #F4F4F4;
+  @media (max-width: 425px) {
+  display:grid;
+    align-items:center;
+    justify-content: center;
+
+  }
+
+  .leftSide {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 30px 0;
+
+    .titles {
+      .title {
+        font-family: Proxima Nova, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 27px;
+        letter-spacing: 0.01em;
+        color: #000000;
+        @media (max-width: 768px) {
+          font-size: 16px;
+          line-height: 18px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          max-width: 186px;
+        }
+      }
+
+      .description {
+        font-family: Proxima Nova, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.01em;
+        color: #8D8D8D;
+        @media (max-width: 768px) {
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
+    }
+  }
+
+  .rightSide {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 93px;
+    @media (max-width: 768px) {
+      gap: 40px;
+      margin-bottom: 15px;
+    }
+
+    .multiplication {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      .myButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+        border: 2px solid #FE5F1E;
+        border-radius: 50%;
+        background-color: white;
+        cursor: pointer;
+        @media (max-width: 425px) {
+          width:27px;
+          height:27px;
+        }
+      }
+
+      .value {
+        font-family: Proxima Nova, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 27px;
+        letter-spacing: 0.01em;
+        color: #000000;
+        @media (max-width: 425px) {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .price {
+      font-family: Proxima Nova, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 27px;
+      letter-spacing: 0.01em;
+      color: #000000;
+      @media (max-width: 425px) {
+        font-size: 20px;
+      }
+    }
+
+    .abolition {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 32px;
+      height: 32px;
+      border: 2px solid #B6B6B6;
+      border-radius: 50%;
+      background-color: white;
+      cursor: pointer;
+    }
+  }
+}

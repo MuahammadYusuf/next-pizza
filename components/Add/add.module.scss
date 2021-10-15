@@ -1,0 +1,37 @@
+.add{
+  background: #FFFFFF;
+  border: 1px solid #EB5A1E;
+  box-sizing: border-box;
+  border-radius: 30px;
+  color: #EB5A1E;
+  display: flex;
+  align-items: center;
+  padding: 8px 15px 11px;
+  cursor: pointer;
+  box-sizing: border-box;
+  svg{
+    margin-right: 4px;
+  }
+  &:hover{
+    background-color: #EB5A1E;
+    color: white;
+
+    svg path {
+      fill: #fff;
+    }
+  }
+  .number{
+    width: 22px;
+    height: 20px;
+    margin-left: 5px;
+    color: white;
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color:#EB5A1E ;
+    &.my{
+      display: flex;
+    }
+  }
+}

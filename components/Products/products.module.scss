@@ -1,0 +1,29 @@
+.products {
+  @media (max-width: 768px) {
+    display: block;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .title {
+    font-family: Proxima Nova, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-bottom: 35px;
+  }
+
+  .myProduct {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    @media (max-width: 768px) {
+      display: grid;
+    }
+  }
+}
+
+
